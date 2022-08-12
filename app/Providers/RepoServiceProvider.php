@@ -15,7 +15,7 @@ class RepoServiceProvider extends ServiceProvider
     {
         /****************************************   Admin  **************************************************************/
         $this->app->bind('App\Http\Repository\Admin\CategoryRepositoryInterface','App\Http\Repository\Admin\CategoryRepository');
-        $this->app->bind('App\Http\Repository\Admin\SubCategoryRepositoryInterface','App\Http\Repository\Admin\subCategoryRepository');
+        $this->app->bind('App\Http\Repository\Admin\SubCategoryRepositoryInterface','App\Http\Repository\Admin\SubCategoryRepository');
         $this->app->bind('App\Http\Repository\Admin\ProductRepositoryInterface','App\Http\Repository\Admin\ProductRepository');
         $this->app->bind('App\Http\Repository\Admin\FilterRepositoryInterface','App\Http\Repository\Admin\FilterRepository');
         $this->app->bind('App\Http\Repository\Admin\SubFilterRepositoryInterface','App\Http\Repository\Admin\SubFilterRepository');
