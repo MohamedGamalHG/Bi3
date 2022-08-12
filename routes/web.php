@@ -81,6 +81,11 @@ Route::group(
             return redirect()->route('customer.index');
 
         })->name('logout_customer');
+        
+        Route::get('/test',function(){
+            $user = \App\User::all();
+            return $user;
+        });
     });
     //Route::get('login',function (){return 'test';})->name('login');
     Route::get('/logout',function (){
