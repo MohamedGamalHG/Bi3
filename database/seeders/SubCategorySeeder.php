@@ -8,6 +8,8 @@ use App\Models\ٍSubCategory;
 
 class SubCategorySeeder extends Seeder
 {
+   public function run()
+    {
     Db::table('sub_categories')->delete();
     $cat = [
         ['ar' => 'موبيلات','en'=>'Mobiles'],
@@ -18,5 +20,6 @@ class SubCategorySeeder extends Seeder
     $i = 1;
   foreach ($cat as $cats)
       Category::create(['subcategory_name'=>$cats,'category_id'=>$i++]);
+}
 
 }
