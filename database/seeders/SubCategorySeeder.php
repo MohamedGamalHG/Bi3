@@ -19,7 +19,7 @@ class SubCategorySeeder extends Seeder
     Db::table('categories')->insert(['category_name'=>$cats]);*/
     $i = 1;
   foreach ($cat as $cats)
-      Category::create(['subcategory_name'=>$cats,'category_id'=>$i++]);
+      SubCategory::create(['subcategory_name'=>$cats,'category_id'=>$i++]);
 }
 
 }
