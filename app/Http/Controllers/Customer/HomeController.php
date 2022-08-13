@@ -86,7 +86,7 @@ class HomeController extends Controller
             $product->description = $request->description;
             $product->price = $request->price;
             $product->subcategory_id = $request->subcategory_id;
-            return dd();
+           
             $product->save();
 
             if(!empty($request->image)) {
