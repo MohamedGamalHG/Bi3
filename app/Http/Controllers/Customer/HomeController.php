@@ -104,7 +104,7 @@ class HomeController extends Controller
             DB::commit();
             return redirect()->route('customer.index');
         }catch(\Exception $e){
-            return $e->getMessage();
+            
             DB::rollBack();
             return redirect()->back();
         }
