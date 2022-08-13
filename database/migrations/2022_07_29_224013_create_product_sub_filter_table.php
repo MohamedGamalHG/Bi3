@@ -13,7 +13,7 @@ class CreateProductSubFiltersTable extends Migration
      */
     public function up()
     {
-        Schema::create('product_sub_filter', function (Blueprint $table) {
+        Schema::create('product_sub_filters', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->foreignId('sub_filter_id')->references('id')->on('sub_filters')->onDelete('cascade');
