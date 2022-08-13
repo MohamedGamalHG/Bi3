@@ -17,7 +17,6 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('name');
             $table->decimal('price',8,2);
-            $table->integer('quantity');
             $table->string('description');
             $table->foreignId('subcategory_id')->references('id')->on('sub_categories')->onDelete('cascade');
             $table->timestamps();
