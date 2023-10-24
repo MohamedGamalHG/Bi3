@@ -10,7 +10,7 @@ class CategorySearch extends Component
     public $search,$category,$error;
     public function searchCategory()
     {
-        return dd();
+       // return dd();
         try{
 
         $this->category = Category::where('category_name', 'like', '%' . $this->search . '%')->get();
